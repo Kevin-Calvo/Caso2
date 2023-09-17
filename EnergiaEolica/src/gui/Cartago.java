@@ -18,10 +18,6 @@ public class Cartago extends JFrame{
 	JLabel aerogeneradort;
 	JLabel generador;
 	JLabel generadort;
-	JLabel torre;
-	JLabel torret;
-	JLabel control;
-	JLabel controlt;
 	JLabel red; 
 	JLabel redt; 
 	JLabel x;
@@ -36,13 +32,13 @@ public class Cartago extends JFrame{
 		
 		c = new JFrame(); 
 		c.setVisible(true);
-		c.setBounds(250,250,1000,600);
+		c.setBounds(250,250,740,400);
 		c.setDefaultCloseOperation(HIDE_ON_CLOSE); 
 		c.setTitle("San Jose");
 		
 		titulo = new JLabel();
 		titulo.setText("Red de Cartago");
-		titulo.setBounds(350,0,400,100);
+		titulo.setBounds(250,0,400,100);
 		titulo.setFont(font1);
 		c.add(titulo); 
 		
@@ -60,13 +56,13 @@ public class Cartago extends JFrame{
 		
 		viento = new JLabel();
 		viento.setText("Viento: ");
-		viento.setBounds(700,45,300,100);
+		viento.setBounds(500,45,300,100);
 		viento.setFont(font3);
 		c.add(viento); 
 		
 		vientot = new JLabel();
 		vientot.setText("###");
-		vientot.setBounds(780,45,300,100);
+		vientot.setBounds(580,45,300,100);
 		vientot.setFont(font2);
 		c.add(vientot);  
 		
@@ -84,49 +80,25 @@ public class Cartago extends JFrame{
 		
 		generador = new JLabel();
 		generador.setText("generador");
-		generador.setBounds(420,200,300,100);
+		generador.setBounds(340,200,300,100);
 		generador.setFont(font2);
 		c.add(generador);
 		
 		generadort = new JLabel();
 		generadort.setText("###");
-		generadort.setBounds(440,160,300,100);
+		generadort.setBounds(360,160,300,100);
 		generadort.setFont(font2);
-		c.add(generadort);
-		
-		torre = new JLabel();
-		torre.setText("torre");
-		torre.setBounds(780,200,300,100);
-		torre.setFont(font2);
-		c.add(torre);
-		
-		torret = new JLabel();
-		torret.setText("###");
-		torret.setBounds(785,160,300,100);
-		torret.setFont(font2);
-		c.add(torret);
-		
-		control = new JLabel();
-		control.setText("Sistema de control");
-		control.setBounds(240,400,300,100);
-		control.setFont(font2);
-		c.add(control);
-		
-		controlt = new JLabel();
-		controlt.setText("###");
-		controlt.setBounds(300,360,300,100);
-		controlt.setFont(font2);
-		c.add(controlt);
+		c.add(generadort);			
 		
 		red = new JLabel();
 		red.setText("Red Nacional");
-		red.setBounds(600,400,300,100);
+		red.setBounds(540,200,300,100);
 		red.setFont(font2);
 		c.add(red);
 		
 		redt = new JLabel();
 		redt.setText("###");
-		redt.setBounds(640,360,300,100);
+		redt.setBounds(580,160,300,100);
 		redt.setFont(font2);
 		c.add(redt);
 		
