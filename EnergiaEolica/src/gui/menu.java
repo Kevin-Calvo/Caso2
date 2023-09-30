@@ -2,8 +2,8 @@ package gui;
 
 import javax.swing.*;
 import java.awt.Font; 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent; 
+import java.awt.event.ActionListener; 
 
 public class menu extends JFrame{
 	JFrame m;
@@ -13,7 +13,7 @@ public class menu extends JFrame{
 	JLabel titulo;
 	Font font;
 	
-	public menu() {
+	public menu(Cartago c, Guanacaste g, SanJose s) {  
 		m = new JFrame();
 		m.setVisible(true);
 		m.setBounds(250,250, 600, 400);
@@ -36,11 +36,25 @@ public class menu extends JFrame{
 		sanjose.setBounds(350,150,150,50);
 		sanjose.setText("San Jose");
 		m.add(sanjose); 
+		
+		sanjose.addActionListener(new ActionListener() {   
+			public void actionPerformed(ActionEvent e) { 
+				s.setVisible(true); 
+				System.out.println("Dio click"); 
+			}
+		}); 
 	
 		guanacaste = new JButton();
 		guanacaste.setBounds(215,250,150,50);
 		guanacaste.setText("Guanacaste");
 		m.add(guanacaste); 
+		
+		guanacaste.addActionListener(new ActionListener() {   
+			public void actionPerformed(ActionEvent e) { 
+				g.setVisible(true); 
+				System.out.println("Dio click"); 
+			}
+		}); 
 	
 	}
 	

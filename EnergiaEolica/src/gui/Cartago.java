@@ -7,7 +7,6 @@ import java.awt.event.ActionListener;
 
 public class Cartago extends JFrame{
 
-
 	JFrame c; 
 	JLabel titulo;
 	JLabel condicion;
@@ -25,16 +24,16 @@ public class Cartago extends JFrame{
 	Font font2;
 	Font font3; 
 	
-	public Cartago() {
+	public Cartago() { 
 		font1 = new Font("Arial", Font.BOLD, 35);
 		font2 = new Font("Arial", Font.PLAIN, 20); 
 		font3 = new Font("Arial", Font.ITALIC, 20); 
 		
 		c = new JFrame(); 
-		c.setVisible(true);
+		c.setVisible(false);
 		c.setBounds(250,250,740,400);
 		c.setDefaultCloseOperation(HIDE_ON_CLOSE); 
-		c.setTitle("San Jose");
+		c.setTitle("Cartago");
 		
 		titulo = new JLabel();
 		titulo.setText("Red de Cartago");
@@ -104,6 +103,8 @@ public class Cartago extends JFrame{
 		
 		x = new JLabel();
 		c.add(x); 
+		
+		
 	}
 
 

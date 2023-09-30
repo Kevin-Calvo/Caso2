@@ -29,7 +29,7 @@ public class SanJose extends JFrame{
 		font3 = new Font("Arial", Font.ITALIC, 20); 
 		
 		s = new JFrame(); 
-		s.setVisible(true);
+		s.setVisible(false);
 		s.setBounds(250,250,740,400);
 		s.setDefaultCloseOperation(HIDE_ON_CLOSE); 
 		s.setTitle("San Jose");

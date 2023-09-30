@@ -30,10 +30,10 @@ public class Guanacaste extends JFrame{
 		font3 = new Font("Arial", Font.ITALIC, 20); 
 		
 		g = new JFrame(); 
-		g.setVisible(true);
+		g.setVisible(false);
 		g.setBounds(250,250,740,400);
 		g.setDefaultCloseOperation(HIDE_ON_CLOSE); 
-		g.setTitle("San Jose");
+		g.setTitle("Guanacaste");
 		
 		titulo = new JLabel();
 		titulo.setText("Red de Guanacaste");
