@@ -5,7 +5,7 @@ class operador {
 	
 	int angulo = 5;
 	boolean encendido = true; 
-    protected float potenciaGenerada; // Potencia generada por el aerogenerador en kW
+    protected float potenciaGenerada; 
 
     
     

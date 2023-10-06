@@ -6,13 +6,12 @@ import java.util.List;
 public class main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 /*
 		menu m = new menu();   
 		historial h = new historial();
 		control c = new control();
 	*/
-		 // Crear varios generadores*
 		
         List<Aerogenerador> generadores = new ArrayList<>();
         Aerogenerador generador1 = new Aerogenerador(90); 
@@ -49,10 +48,8 @@ public class main {
         generadores.add(generador16);  
 
         
-        // Crear la red de energía nacional
         RedEnergiaNacional redEnergiaNacional = new RedEnergiaNacional();
 
-        // Crear el controlador y comenzar la producción de energía
         Controlador controlador = new Controlador(generadores, redEnergiaNacional);
         controlador.iniciarProduccionEnergia();
         

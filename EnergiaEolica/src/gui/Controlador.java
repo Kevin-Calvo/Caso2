@@ -15,7 +15,7 @@ public class Controlador {
         this.timer = new Timer();
     }
 
-    // Método para simular la producción de energía cada 5 segundos
+
     public void iniciarProduccionEnergia() {
         TimerTask tarea = new TimerTask() {
             @Override
@@ -31,14 +31,14 @@ public class Controlador {
             }
         };
 
-        // Programar la tarea para ejecutarse cada 5 segundos (5000 milisegundos)
+
         timer.schedule(tarea, 0, 5000);
         
-        // Detener la tarea después de 10 segundos
+  
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                timer.cancel(); // Detener el temporizador
+                timer.cancel(); 
                 System.out.println("Producción de energía detenida después de 100 segundos");
             }
         }, 100000); 

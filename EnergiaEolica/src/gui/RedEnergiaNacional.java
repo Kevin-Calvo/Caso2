@@ -1,7 +1,7 @@
 package gui;
 
 public class RedEnergiaNacional {
-    private float energiaEnRed; // Energía en la red nacional en kW
+    private float energiaEnRed; 
 
     public RedEnergiaNacional() {
         this.energiaEnRed = 0; 
