@@ -1,4 +1,4 @@
-package gui;
+package objetos;
 
 public class RedEnergiaNacional {
     private float energiaEnRed; 
